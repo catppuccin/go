@@ -16,7 +16,7 @@
 ## Usage
 
 1. `go get github.com/caarlos0/catppuccin-go`
-2. `import github.com/caarlos0/catppuccin-go`
+2. `import "github.com/caarlos0/catppuccin-go"`
 3. Use the theme variants as you wish.
 
 ## 🙋 FAQ (optional)
