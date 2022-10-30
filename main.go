@@ -2,22 +2,39 @@ package catppuccingo
 
 // Theme is an interface implemented by all Catppuccin variations.
 type Theme interface {
-	Pink() string
-	Mauve() string
-	Red() string
-	Maroon() string
-	Peach() string
-	Yellow() string
-	Green() string
-	Sky() string
-	Blue() string
-	Lavender() string
-	Text() string
-	Overlay0() string
-	Surface2() string
-	Surface0() string
-	Base() string
+	Rosewater() Color
+	Flamingo() Color
+	Pink() Color
+	Mauve() Color
+	Red() Color
+	Maroon() Color
+	Peach() Color
+	Yellow() Color
+	Green() Color
+	Teal() Color
+	Sky() Color
+	Sapphire() Color
+	Blue() Color
+	Lavender() Color
+	Text() Color
+	Subtext1() Color
+	Subtext0() Color
+	Overlay2() Color
+	Overlay1() Color
+	Overlay0() Color
+	Surface2() Color
+	Surface1() Color
+	Surface0() Color
+	Crust() Color
+	Mantle() Color
+	Base() Color
 	Name() string
+}
+
+type Color struct {
+	Hex string
+	RGB [3]int
+	HSL [3]float32
 }
 
 // Mocha variant.
