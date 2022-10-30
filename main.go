@@ -1,5 +1,7 @@
 package catppuccingo
 
+import "image/color"
+
 // Theme is an interface implemented by all Catppuccin variations.
 type Theme interface {
 	Rosewater() Color
@@ -31,11 +33,19 @@ type Theme interface {
 	Name() string
 }
 
+// Color is a color in Hex, RGB, and HSL.
 type Color struct {
 	Hex string
-	RGB [3]int
+	RGB [3]uint32
 	HSL [3]float32
 }
+
+// RGBA implements color.Color
+func (c Color) RGBA() (r uint32, g uint32, b uint32, a uint32) {
+	return c.RGB[0], c.RGB[1], c.RGB[2], 1
+}
+
+var _ color.Color = Color{}
 
 // Mocha variant.
 func Mocha() Theme { return mocha{} }
