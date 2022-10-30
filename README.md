@@ -15,14 +15,14 @@
 
 ## Usage
 
-1. `go get github.com/caarlos0/catppuccin-go`
-2. `import "github.com/caarlos0/catppuccin-go"`
+1. `go get github.com/catppuccin/go`
+2. Add an`import catppuccin "github.com/catppuccin/go"` to your file
 3. Use the theme variants as you wish.
 
 ## 🙋 FAQ (optional)
 
 -	Q: **_"Where can I find the doc?"_**\
-	A: https://pkg.go.dev/github.com/caarlos0/catppuccin-go
+	A: https://pkg.go.dev/github.com/catppuccin/go
 
 ## 💝 Thanks to
 

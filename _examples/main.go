@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	catppuccingo "github.com/caarlos0/catppuccin-go"
+	catppuccin "github.com/catppuccin/go"
 	"github.com/muesli/termenv"
 )
 
@@ -15,11 +15,11 @@ func main() {
 	defer restoreConsole()
 	fmt.Println(termenv.String("Catppuccin Themes for Go").Bold())
 
-	for _, theme := range []catppuccingo.Theme{
-		catppuccingo.Frappe(),
-		catppuccingo.Latte(),
-		catppuccingo.Mocha(),
-		catppuccingo.Macchiato(),
+	for _, theme := range []catppuccin.Theme{
+		catppuccin.Frappe(),
+		catppuccin.Latte(),
+		catppuccin.Mocha(),
+		catppuccin.Macchiato(),
 	} {
 		fmt.Println()
 		fmt.Println(termenv.String(theme.Name()).Italic())
@@ -53,7 +53,7 @@ func main() {
 	}
 }
 
-func format(s string, c, txt catppuccingo.Color) {
+func format(s string, c, txt catppuccin.Color) {
 	out := termenv.String(fmt.Sprintf(" %s ", s)).
 		Foreground(termenv.TrueColor.FromColor(txt)).
 		Background(termenv.TrueColor.FromColor(c))
