@@ -1,14 +1,14 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://github.com/catppuccin/template">App</a>
+	Catppuccin for <a href="https://go.dev">Go</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/template/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/template?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/template/issues"><img src="https://img.shields.io/github/issues/catppuccin/template?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/template/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/template?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/caarlos0/catppuccin-go/stargazers"><img src="https://img.shields.io/github/stars/caarlos0/catppuccin-go?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/caarlos0/catppuccin-go/issues"><img src="https://img.shields.io/github/issues/caarlos0/catppuccin-go?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/caarlos0/catppuccin-go/contributors"><img src="https://img.shields.io/github/contributors/caarlos0/catppuccin-go?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -36,19 +36,18 @@
 
 ## Usage
 
-1. Clone this repository locally
-2. Open the app's settings
-3. Select `import theme` and browse to where you cloned Catppuccin
-4. Select it
+1. `go get github.com/caarlos0/catppuccin-go`
+2. `import github.com/caarlos0/catppuccin-go`
+3. Use the theme variants as you wish.
 
 ## 🙋 FAQ (optional)
 
 -	Q: **_"Where can I find the doc?"_**\
-	A: Run `:help theme`
+	A: https://pkg.go.dev/github.com/caarlos0/catppuccin-go
 
 ## 💝 Thanks to
 
-- [Human](https://github.com/catppuccin)
+- [Carlos Becker](https://github.com/caarlos0)
 
 &nbsp;
 
