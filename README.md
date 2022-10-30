@@ -11,7 +11,7 @@
 	<a href="https://github.com/caarlos0/catppuccin-go/contributors"><img src="https://img.shields.io/github/contributors/caarlos0/catppuccin-go?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-<img width="1957" alt="All Colors" src="https://user-images.githubusercontent.com/245435/198893656-4f3d37dd-995a-4ffd-b325-e0292f5611db.png">
+![Catppuccin Variants](https://raw.githubusercontent.com/catppuccin/go/main/_examples/catppuccin.gif)
 
 ## Usage
 
