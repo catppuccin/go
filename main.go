@@ -46,15 +46,3 @@ func (c Color) RGBA() (r uint32, g uint32, b uint32, a uint32) {
 }
 
 var _ color.Color = Color{}
-
-// Mocha variant.
-func Mocha() Theme { return mocha{} }
-
-// Frappe variant.
-func Frappe() Theme { return frappe{} }
-
-// Macchiato variant.
-func Macchiato() Theme { return macchiato{} }
-
-// Latte variant.
-func Latte() Theme { return latte{} }
