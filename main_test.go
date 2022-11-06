@@ -6,10 +6,10 @@ import (
 
 func TestThemes(t *testing.T) {
 	for _, theme := range []Theme{
-		Mocha(),
-		Frappe(),
-		Macchiato(),
-		Latte(),
+		Mocha,
+		Frappe,
+		Macchiato,
+		Latte,
 	} {
 		t.Run(theme.Name(), func(t *testing.T) {
 			requireNotEmpty(t, theme.Rosewater())
