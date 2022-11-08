@@ -53,15 +53,15 @@ func (c Color) RGBA() (r uint32, g uint32, b uint32, a uint32) {
 
 var _ color.Color = Color{}
 
-// Get returns the Theme variant by name.
-func Get(variant string) Theme {
+// Variant returns the Theme variant by name.
+func Variant(flavour string) Theme {
 	for _, t := range []Theme{
 		Mocha,
 		Frappe,
 		Macchiato,
 		Latte,
 	} {
-		if strings.EqualFold(t.Name(), variant) {
+		if strings.EqualFold(t.Name(), flavour) {
 			return t
 		}
 	}

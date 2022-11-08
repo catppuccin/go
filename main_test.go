@@ -2,7 +2,7 @@ package catppuccingo
 
 import "testing"
 
-func TestGet(t *testing.T) {
+func TestVariant(t *testing.T) {
 	for s, ss := range map[string]string{
 		"moCha":     Mocha.Name(),
 		"Mocha":     Mocha.Name(),
@@ -14,13 +14,13 @@ func TestGet(t *testing.T) {
 		"latte":     Latte.Name(),
 	} {
 		t.Run(s, func(t *testing.T) {
-			if Get(s).Name() != ss {
-				t.Errorf("expected %q, got %q", ss, Get(s).Name())
+			if Variant(s).Name() != ss {
+				t.Errorf("expected %q, got %q", ss, Variant(s).Name())
 			}
 		})
 	}
 	t.Run("invalid", func(t *testing.T) {
-		v := Get("invalid")
+		v := Variant("invalid")
 		if v != nil {
 			t.Errorf("expected nil, got %v", v)
 		}
