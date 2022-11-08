@@ -2,8 +2,8 @@ package catppuccingo
 
 type mocha struct{}
 
-// Mocha theme variant.
-var Mocha Theme = mocha{}
+// Mocha flavour variant.
+var Mocha Flavour = mocha{}
 
 func (mocha) Name() string { return "mocha" }
 

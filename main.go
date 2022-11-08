@@ -2,8 +2,8 @@ package catppuccingo
 
 import "image/color"
 
-// Theme is an interface implemented by all Catppuccin variations.
-type Theme interface {
+// Flavour is an interface implemented by all Catppuccin variations.
+type Flavour interface {
 	Rosewater() Color
 	Flamingo() Color
 	Pink() Color
@@ -32,6 +32,9 @@ type Theme interface {
 	Base() Color
 	Name() string
 }
+
+// Theme is a type alias of Flavour to keep compatibility with previous versions.
+type Theme = Flavour
 
 // Color is a color in Hex, RGB, and HSL.
 type Color struct {
