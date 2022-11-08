@@ -33,6 +33,9 @@ type Flavour interface {
 	Name() string
 }
 
+// Theme is a type alias of Flavour to keep compatibility with previous versions.
+type Theme = Flavour
+
 // Color is a color in Hex, RGB, and HSL.
 type Color struct {
 	Hex string
