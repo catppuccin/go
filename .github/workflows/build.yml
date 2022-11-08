@@ -1,0 +1,31 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-go@v2
+      with:
+        go-version: ^1
+        check-latest: true
+    - run: go test -cover -race -failfast ./...
+  example:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./_examples
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-go@v2
+      with:
+        go-version: ^1
+        check-latest: true
+        cache: true
+    - run: go run .

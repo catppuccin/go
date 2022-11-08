@@ -10,10 +10,10 @@ import (
 func main() {
 	fmt.Println()
 	for _, flavour := range []catppuccin.Flavour{
-		catppuccin.Mocha(),
-		catppuccin.Frappe(),
-		catppuccin.Macchiato(),
-		catppuccin.Latte(),
+		catppuccin.Mocha,
+		catppuccin.Frappe,
+		catppuccin.Macchiato,
+		catppuccin.Latte,
 	} {
 
 		fmt.Println(lipgloss.NewStyle().Bold(true).Render(flavour.Name() + ":"))
