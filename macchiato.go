@@ -3,8 +3,8 @@ package catppuccingo
 // macchiato variant.
 type macchiato struct{}
 
-// Macchiato theme variant.
-var Macchiato Theme = macchiato{}
+// Macchiato flavour variant.
+var Macchiato Flavour = macchiato{}
 
 func (macchiato) Name() string { return "macchiato" }
 
