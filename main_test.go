@@ -34,6 +34,13 @@ func TestColor(t *testing.T) {
 	}
 }
 
+func TestTypeAlias(t *testing.T) {
+	var mocha Theme = Mocha
+	if mocha.Name() != "mocha" {
+		t.Errorf("expected Mocha, got %q", mocha.Name())
+	}
+}
+
 func TestFlavours(t *testing.T) {
 	for _, flavour := range []Flavour{
 		Mocha,
