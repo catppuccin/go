@@ -17,7 +17,7 @@
 
 1. `go get github.com/catppuccin/go`
 2. Add an`import catppuccin "github.com/catppuccin/go"` to your file
-3. Use the theme variants as you wish.
+3. Use the flavours as you wish.
 
 ## 🙋 FAQ (optional)
 

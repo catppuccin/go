@@ -1,6 +1,6 @@
 Output catppuccin.gif
 
-Set Theme "Catppuccin Mocha"
+Set Flavour "Catppuccin Mocha"
 Set Width 2000
 Set Height 1300
 Set FontSize 26
