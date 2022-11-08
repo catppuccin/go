@@ -1,8 +1,38 @@
 package catppuccingo
 
-import (
-	"testing"
-)
+import "testing"
+
+func TestGet(t *testing.T) {
+	for s, ss := range map[string]string{
+		"moCha":     Mocha.Name(),
+		"Mocha":     Mocha.Name(),
+		"MOCHA":     Mocha.Name(),
+		"mocha":     Mocha.Name(),
+		"Frappe":    Frappe.Name(),
+		"frappe":    Frappe.Name(),
+		"MaccHiaTo": Macchiato.Name(),
+		"latte":     Latte.Name(),
+	} {
+		t.Run(s, func(t *testing.T) {
+			if Get(s).Name() != ss {
+				t.Errorf("expected %q, got %q", ss, Get(s).Name())
+			}
+		})
+	}
+	t.Run("invalid", func(t *testing.T) {
+		v := Get("invalid")
+		if v != nil {
+			t.Errorf("expected nil, got %v", v)
+		}
+	})
+}
+
+func TestColor(t *testing.T) {
+	r, g, b, a := Mocha.Base().RGBA()
+	if 30 != r || 30 != g || b != 46 || a != 1 {
+		t.Fatalf("expected rgba=%d %d %d %d, got %d %d %d %d", 30, 30, 46, 1, r, g, b, a)
+	}
+}
 
 func TestThemes(t *testing.T) {
 	for _, theme := range []Theme{

@@ -1,6 +1,9 @@
 package catppuccingo
 
-import "image/color"
+import (
+	"image/color"
+	"strings"
+)
 
 // Theme is an interface implemented by all Catppuccin variations.
 type Theme interface {
@@ -46,3 +49,18 @@ func (c Color) RGBA() (r uint32, g uint32, b uint32, a uint32) {
 }
 
 var _ color.Color = Color{}
+
+// Get returns the Theme variant by name.
+func Get(variant string) Theme {
+	for _, t := range []Theme{
+		Mocha,
+		Frappe,
+		Macchiato,
+		Latte,
+	} {
+		if strings.EqualFold(t.Name(), variant) {
+			return t
+		}
+	}
+	return nil
+}
