@@ -1,12 +1,15 @@
 package catppuccingo
 
+// Mocha variant
 type mocha struct{}
 
-// Mocha flavour variant.
-var Mocha Flavour = mocha{}
+// Mocha flavor variant
+var Mocha Flavor = mocha{}
 
+// Mocha
 func (mocha) Name() string { return "mocha" }
 
+// Rosewater
 func (mocha) Rosewater() Color {
 	return Color{
 		Hex: "#f5e0dc",
@@ -15,6 +18,7 @@ func (mocha) Rosewater() Color {
 	}
 }
 
+// Flamingo
 func (mocha) Flamingo() Color {
 	return Color{
 		Hex: "#f2cdcd",
@@ -23,6 +27,7 @@ func (mocha) Flamingo() Color {
 	}
 }
 
+// Pink
 func (mocha) Pink() Color {
 	return Color{
 		Hex: "#f5c2e7",
@@ -31,6 +36,7 @@ func (mocha) Pink() Color {
 	}
 }
 
+// Mauve
 func (mocha) Mauve() Color {
 	return Color{
 		Hex: "#cba6f7",
@@ -39,6 +45,7 @@ func (mocha) Mauve() Color {
 	}
 }
 
+// Red
 func (mocha) Red() Color {
 	return Color{
 		Hex: "#f38ba8",
@@ -47,6 +54,7 @@ func (mocha) Red() Color {
 	}
 }
 
+// Maroon
 func (mocha) Maroon() Color {
 	return Color{
 		Hex: "#eba0ac",
@@ -55,6 +63,7 @@ func (mocha) Maroon() Color {
 	}
 }
 
+// Peach
 func (mocha) Peach() Color {
 	return Color{
 		Hex: "#fab387",
@@ -63,6 +72,7 @@ func (mocha) Peach() Color {
 	}
 }
 
+// Yellow
 func (mocha) Yellow() Color {
 	return Color{
 		Hex: "#f9e2af",
@@ -71,6 +81,7 @@ func (mocha) Yellow() Color {
 	}
 }
 
+// Green
 func (mocha) Green() Color {
 	return Color{
 		Hex: "#a6e3a1",
@@ -79,6 +90,7 @@ func (mocha) Green() Color {
 	}
 }
 
+// Teal
 func (mocha) Teal() Color {
 	return Color{
 		Hex: "#94e2d5",
@@ -87,6 +99,7 @@ func (mocha) Teal() Color {
 	}
 }
 
+// Sky
 func (mocha) Sky() Color {
 	return Color{
 		Hex: "#89dceb",
@@ -95,6 +108,7 @@ func (mocha) Sky() Color {
 	}
 }
 
+// Sapphire
 func (mocha) Sapphire() Color {
 	return Color{
 		Hex: "#74c7ec",
@@ -103,6 +117,7 @@ func (mocha) Sapphire() Color {
 	}
 }
 
+// Blue
 func (mocha) Blue() Color {
 	return Color{
 		Hex: "#89b4fa",
@@ -111,6 +126,7 @@ func (mocha) Blue() Color {
 	}
 }
 
+// Lavender
 func (mocha) Lavender() Color {
 	return Color{
 		Hex: "#b4befe",
@@ -119,6 +135,7 @@ func (mocha) Lavender() Color {
 	}
 }
 
+// Text
 func (mocha) Text() Color {
 	return Color{
 		Hex: "#cdd6f4",
@@ -127,14 +144,16 @@ func (mocha) Text() Color {
 	}
 }
 
+// Subtext 1
 func (mocha) Subtext1() Color {
 	return Color{
 		Hex: "#bac2de",
 		RGB: [3]uint32{186, 194, 222},
-		HSL: [3]float32{227, 0.35, 0.80},
+		HSL: [3]float32{227, 0.35, 0.8},
 	}
 }
 
+// Subtext 0
 func (mocha) Subtext0() Color {
 	return Color{
 		Hex: "#a6adc8",
@@ -143,6 +162,7 @@ func (mocha) Subtext0() Color {
 	}
 }
 
+// Overlay 2
 func (mocha) Overlay2() Color {
 	return Color{
 		Hex: "#9399b2",
@@ -151,6 +171,7 @@ func (mocha) Overlay2() Color {
 	}
 }
 
+// Overlay 1
 func (mocha) Overlay1() Color {
 	return Color{
 		Hex: "#7f849c",
@@ -159,6 +180,7 @@ func (mocha) Overlay1() Color {
 	}
 }
 
+// Overlay 0
 func (mocha) Overlay0() Color {
 	return Color{
 		Hex: "#6c7086",
@@ -167,6 +189,7 @@ func (mocha) Overlay0() Color {
 	}
 }
 
+// Surface 2
 func (mocha) Surface2() Color {
 	return Color{
 		Hex: "#585b70",
@@ -175,6 +198,7 @@ func (mocha) Surface2() Color {
 	}
 }
 
+// Surface 1
 func (mocha) Surface1() Color {
 	return Color{
 		Hex: "#45475a",
@@ -183,6 +207,7 @@ func (mocha) Surface1() Color {
 	}
 }
 
+// Surface 0
 func (mocha) Surface0() Color {
 	return Color{
 		Hex: "#313244",
@@ -191,6 +216,7 @@ func (mocha) Surface0() Color {
 	}
 }
 
+// Base
 func (mocha) Base() Color {
 	return Color{
 		Hex: "#1e1e2e",
@@ -199,6 +225,7 @@ func (mocha) Base() Color {
 	}
 }
 
+// Mantle
 func (mocha) Mantle() Color {
 	return Color{
 		Hex: "#181825",
@@ -207,10 +234,11 @@ func (mocha) Mantle() Color {
 	}
 }
 
+// Crust
 func (mocha) Crust() Color {
 	return Color{
 		Hex: "#11111b",
 		RGB: [3]uint32{17, 17, 27},
-		HSL: [3]float32{240, 0.23, 0.9},
+		HSL: [3]float32{240, 0.23, 0.09},
 	}
 }

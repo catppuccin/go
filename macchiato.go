@@ -1,21 +1,24 @@
 package catppuccingo
 
-// macchiato variant.
+// Macchiato variant
 type macchiato struct{}
 
-// Macchiato flavour variant.
-var Macchiato Flavour = macchiato{}
+// Macchiato flavor variant
+var Macchiato Flavor = macchiato{}
 
+// Macchiato
 func (macchiato) Name() string { return "macchiato" }
 
+// Rosewater
 func (macchiato) Rosewater() Color {
 	return Color{
 		Hex: "#f4dbd6",
 		RGB: [3]uint32{244, 219, 214},
-		HSL: [3]float32{10, 0.58, 0.90},
+		HSL: [3]float32{10, 0.58, 0.9},
 	}
 }
 
+// Flamingo
 func (macchiato) Flamingo() Color {
 	return Color{
 		Hex: "#f0c6c6",
@@ -24,6 +27,7 @@ func (macchiato) Flamingo() Color {
 	}
 }
 
+// Pink
 func (macchiato) Pink() Color {
 	return Color{
 		Hex: "#f5bde6",
@@ -32,14 +36,16 @@ func (macchiato) Pink() Color {
 	}
 }
 
+// Mauve
 func (macchiato) Mauve() Color {
 	return Color{
 		Hex: "#c6a0f6",
 		RGB: [3]uint32{198, 160, 246},
-		HSL: [3]float32{267, 0.83, 0.80},
+		HSL: [3]float32{267, 0.83, 0.8},
 	}
 }
 
+// Red
 func (macchiato) Red() Color {
 	return Color{
 		Hex: "#ed8796",
@@ -48,6 +54,7 @@ func (macchiato) Red() Color {
 	}
 }
 
+// Maroon
 func (macchiato) Maroon() Color {
 	return Color{
 		Hex: "#ee99a0",
@@ -56,6 +63,7 @@ func (macchiato) Maroon() Color {
 	}
 }
 
+// Peach
 func (macchiato) Peach() Color {
 	return Color{
 		Hex: "#f5a97f",
@@ -64,14 +72,16 @@ func (macchiato) Peach() Color {
 	}
 }
 
+// Yellow
 func (macchiato) Yellow() Color {
 	return Color{
 		Hex: "#eed49f",
 		RGB: [3]uint32{238, 212, 159},
-		HSL: [3]float32{40, 0.70, 0.78},
+		HSL: [3]float32{40, 0.7, 0.78},
 	}
 }
 
+// Green
 func (macchiato) Green() Color {
 	return Color{
 		Hex: "#a6da95",
@@ -80,6 +90,7 @@ func (macchiato) Green() Color {
 	}
 }
 
+// Teal
 func (macchiato) Teal() Color {
 	return Color{
 		Hex: "#8bd5ca",
@@ -88,6 +99,7 @@ func (macchiato) Teal() Color {
 	}
 }
 
+// Sky
 func (macchiato) Sky() Color {
 	return Color{
 		Hex: "#91d7e3",
@@ -96,6 +108,7 @@ func (macchiato) Sky() Color {
 	}
 }
 
+// Sapphire
 func (macchiato) Sapphire() Color {
 	return Color{
 		Hex: "#7dc4e4",
@@ -104,6 +117,7 @@ func (macchiato) Sapphire() Color {
 	}
 }
 
+// Blue
 func (macchiato) Blue() Color {
 	return Color{
 		Hex: "#8aadf4",
@@ -112,6 +126,7 @@ func (macchiato) Blue() Color {
 	}
 }
 
+// Lavender
 func (macchiato) Lavender() Color {
 	return Color{
 		Hex: "#b7bdf8",
@@ -120,6 +135,7 @@ func (macchiato) Lavender() Color {
 	}
 }
 
+// Text
 func (macchiato) Text() Color {
 	return Color{
 		Hex: "#cad3f5",
@@ -128,14 +144,16 @@ func (macchiato) Text() Color {
 	}
 }
 
+// Subtext 1
 func (macchiato) Subtext1() Color {
 	return Color{
 		Hex: "#b8c0e0",
 		RGB: [3]uint32{184, 192, 224},
-		HSL: [3]float32{228, 0.39, 0.80},
+		HSL: [3]float32{228, 0.39, 0.8},
 	}
 }
 
+// Subtext 0
 func (macchiato) Subtext0() Color {
 	return Color{
 		Hex: "#a5adcb",
@@ -144,14 +162,16 @@ func (macchiato) Subtext0() Color {
 	}
 }
 
+// Overlay 2
 func (macchiato) Overlay2() Color {
 	return Color{
 		Hex: "#939ab7",
 		RGB: [3]uint32{147, 154, 183},
-		HSL: [3]float32{228, 0.20, 0.65},
+		HSL: [3]float32{228, 0.2, 0.65},
 	}
 }
 
+// Overlay 1
 func (macchiato) Overlay1() Color {
 	return Color{
 		Hex: "#8087a2",
@@ -160,6 +180,7 @@ func (macchiato) Overlay1() Color {
 	}
 }
 
+// Overlay 0
 func (macchiato) Overlay0() Color {
 	return Color{
 		Hex: "#6e738d",
@@ -168,6 +189,7 @@ func (macchiato) Overlay0() Color {
 	}
 }
 
+// Surface 2
 func (macchiato) Surface2() Color {
 	return Color{
 		Hex: "#5b6078",
@@ -176,6 +198,7 @@ func (macchiato) Surface2() Color {
 	}
 }
 
+// Surface 1
 func (macchiato) Surface1() Color {
 	return Color{
 		Hex: "#494d64",
@@ -184,6 +207,7 @@ func (macchiato) Surface1() Color {
 	}
 }
 
+// Surface 0
 func (macchiato) Surface0() Color {
 	return Color{
 		Hex: "#363a4f",
@@ -192,6 +216,7 @@ func (macchiato) Surface0() Color {
 	}
 }
 
+// Base
 func (macchiato) Base() Color {
 	return Color{
 		Hex: "#24273a",
@@ -200,6 +225,7 @@ func (macchiato) Base() Color {
 	}
 }
 
+// Mantle
 func (macchiato) Mantle() Color {
 	return Color{
 		Hex: "#1e2030",
@@ -208,6 +234,7 @@ func (macchiato) Mantle() Color {
 	}
 }
 
+// Crust
 func (macchiato) Crust() Color {
 	return Color{
 		Hex: "#181926",
