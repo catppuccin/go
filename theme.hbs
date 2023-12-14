@@ -1,0 +1,19 @@
+package catppuccingo
+
+type {{flavor}} struct{}
+
+// {{titlecase flavor}} flavour variant.
+var {{titlecase flavor}} Flavour = {{flavor}}{}
+
+func ({{flavor}}) Name() string { return "{{flavor}}" }
+
+{{ #each colors as | color colorName | }}
+func ({{@root/flavor}}) {{titlecase colorName}}() Color {
+	return Color{
+		Hex: "#{{ color }}",
+		RGB: [3]uint32{ {{ red_i color }}, {{ green_i color }}, {{ blue_i color }}},
+		HSL: [3]float32{ {{ hsl color }}},
+	}
+}
+
+{{/each}}
