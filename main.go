@@ -1,4 +1,4 @@
-//go:generate whiskers whiskers.tera
+//go:generate whiskers go.tera
 //go:generate go fmt ./...
 package catppuccingo
 
