@@ -1,13 +1,15 @@
 package catppuccingo
 
-// latte variant.
+// Latte variant
 type latte struct{}
 
-// Latte flavour variant.
-var Latte Flavour = latte{}
+// Latte flavor variant
+var Latte Flavor = latte{}
 
+// Latte
 func (latte) Name() string { return "latte" }
 
+// Rosewater
 func (latte) Rosewater() Color {
 	return Color{
 		Hex: "#dc8a78",
@@ -16,14 +18,16 @@ func (latte) Rosewater() Color {
 	}
 }
 
+// Flamingo
 func (latte) Flamingo() Color {
 	return Color{
 		Hex: "#dd7878",
 		RGB: [3]uint32{221, 120, 120},
-		HSL: [3]float32{0, 0.60, 0.67},
+		HSL: [3]float32{0, 0.6, 0.67},
 	}
 }
 
+// Pink
 func (latte) Pink() Color {
 	return Color{
 		Hex: "#ea76cb",
@@ -32,6 +36,7 @@ func (latte) Pink() Color {
 	}
 }
 
+// Mauve
 func (latte) Mauve() Color {
 	return Color{
 		Hex: "#8839ef",
@@ -40,6 +45,7 @@ func (latte) Mauve() Color {
 	}
 }
 
+// Red
 func (latte) Red() Color {
 	return Color{
 		Hex: "#d20f39",
@@ -48,6 +54,7 @@ func (latte) Red() Color {
 	}
 }
 
+// Maroon
 func (latte) Maroon() Color {
 	return Color{
 		Hex: "#e64553",
@@ -56,6 +63,7 @@ func (latte) Maroon() Color {
 	}
 }
 
+// Peach
 func (latte) Peach() Color {
 	return Color{
 		Hex: "#fe640b",
@@ -64,6 +72,7 @@ func (latte) Peach() Color {
 	}
 }
 
+// Yellow
 func (latte) Yellow() Color {
 	return Color{
 		Hex: "#df8e1d",
@@ -72,14 +81,16 @@ func (latte) Yellow() Color {
 	}
 }
 
+// Green
 func (latte) Green() Color {
 	return Color{
 		Hex: "#40a02b",
 		RGB: [3]uint32{64, 160, 43},
-		HSL: [3]float32{109, 0.58, 0.40},
+		HSL: [3]float32{109, 0.58, 0.4},
 	}
 }
 
+// Teal
 func (latte) Teal() Color {
 	return Color{
 		Hex: "#179299",
@@ -88,6 +99,7 @@ func (latte) Teal() Color {
 	}
 }
 
+// Sky
 func (latte) Sky() Color {
 	return Color{
 		Hex: "#04a5e5",
@@ -96,14 +108,16 @@ func (latte) Sky() Color {
 	}
 }
 
+// Sapphire
 func (latte) Sapphire() Color {
 	return Color{
 		Hex: "#209fb5",
 		RGB: [3]uint32{32, 159, 181},
-		HSL: [3]float32{189, 0.70, 0.42},
+		HSL: [3]float32{189, 0.7, 0.42},
 	}
 }
 
+// Blue
 func (latte) Blue() Color {
 	return Color{
 		Hex: "#1e66f5",
@@ -112,6 +126,7 @@ func (latte) Blue() Color {
 	}
 }
 
+// Lavender
 func (latte) Lavender() Color {
 	return Color{
 		Hex: "#7287fd",
@@ -120,6 +135,7 @@ func (latte) Lavender() Color {
 	}
 }
 
+// Text
 func (latte) Text() Color {
 	return Color{
 		Hex: "#4c4f69",
@@ -128,6 +144,7 @@ func (latte) Text() Color {
 	}
 }
 
+// Subtext 1
 func (latte) Subtext1() Color {
 	return Color{
 		Hex: "#5c5f77",
@@ -136,30 +153,34 @@ func (latte) Subtext1() Color {
 	}
 }
 
+// Subtext 0
 func (latte) Subtext0() Color {
 	return Color{
 		Hex: "#6c6f85",
 		RGB: [3]uint32{108, 111, 133},
-		HSL: [3]float32{233, 0.10, 0.47},
+		HSL: [3]float32{233, 0.1, 0.47},
 	}
 }
 
+// Overlay 2
 func (latte) Overlay2() Color {
 	return Color{
 		Hex: "#7c7f93",
 		RGB: [3]uint32{124, 127, 147},
-		HSL: [3]float32{232, 0.10, 0.53},
+		HSL: [3]float32{232, 0.1, 0.53},
 	}
 }
 
+// Overlay 1
 func (latte) Overlay1() Color {
 	return Color{
 		Hex: "#8c8fa1",
 		RGB: [3]uint32{140, 143, 161},
-		HSL: [3]float32{231, 0.10, 0.59},
+		HSL: [3]float32{231, 0.1, 0.59},
 	}
 }
 
+// Overlay 0
 func (latte) Overlay0() Color {
 	return Color{
 		Hex: "#9ca0b0",
@@ -168,6 +189,7 @@ func (latte) Overlay0() Color {
 	}
 }
 
+// Surface 2
 func (latte) Surface2() Color {
 	return Color{
 		Hex: "#acb0be",
@@ -176,6 +198,7 @@ func (latte) Surface2() Color {
 	}
 }
 
+// Surface 1
 func (latte) Surface1() Color {
 	return Color{
 		Hex: "#bcc0cc",
@@ -184,6 +207,7 @@ func (latte) Surface1() Color {
 	}
 }
 
+// Surface 0
 func (latte) Surface0() Color {
 	return Color{
 		Hex: "#ccd0da",
@@ -192,14 +216,16 @@ func (latte) Surface0() Color {
 	}
 }
 
-func (latte) Crust() Color {
+// Base
+func (latte) Base() Color {
 	return Color{
-		Hex: "#dce0e8",
-		RGB: [3]uint32{220, 224, 232},
-		HSL: [3]float32{220, 0.21, 0.89},
+		Hex: "#eff1f5",
+		RGB: [3]uint32{239, 241, 245},
+		HSL: [3]float32{220, 0.23, 0.95},
 	}
 }
 
+// Mantle
 func (latte) Mantle() Color {
 	return Color{
 		Hex: "#e6e9ef",
@@ -208,10 +234,11 @@ func (latte) Mantle() Color {
 	}
 }
 
-func (latte) Base() Color {
+// Crust
+func (latte) Crust() Color {
 	return Color{
-		Hex: "#eff1f5",
-		RGB: [3]uint32{239, 241, 245},
-		HSL: [3]float32{220, 0.23, 0.95},
+		Hex: "#dce0e8",
+		RGB: [3]uint32{220, 224, 232},
+		HSL: [3]float32{220, 0.21, 0.89},
 	}
 }

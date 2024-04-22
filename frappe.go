@@ -1,13 +1,15 @@
 package catppuccingo
 
-// frappe variant.
+// Frappé variant
 type frappe struct{}
 
-// Frappe flavour variant.
-var Frappe Flavour = frappe{}
+// Frappé flavor variant
+var Frappe Flavor = frappe{}
 
+// Frappé
 func (frappe) Name() string { return "frappe" }
 
+// Rosewater
 func (frappe) Rosewater() Color {
 	return Color{
 		Hex: "#f2d5cf",
@@ -16,6 +18,7 @@ func (frappe) Rosewater() Color {
 	}
 }
 
+// Flamingo
 func (frappe) Flamingo() Color {
 	return Color{
 		Hex: "#eebebe",
@@ -24,6 +27,7 @@ func (frappe) Flamingo() Color {
 	}
 }
 
+// Pink
 func (frappe) Pink() Color {
 	return Color{
 		Hex: "#f4b8e4",
@@ -32,6 +36,7 @@ func (frappe) Pink() Color {
 	}
 }
 
+// Mauve
 func (frappe) Mauve() Color {
 	return Color{
 		Hex: "#ca9ee6",
@@ -40,6 +45,7 @@ func (frappe) Mauve() Color {
 	}
 }
 
+// Red
 func (frappe) Red() Color {
 	return Color{
 		Hex: "#e78284",
@@ -48,6 +54,7 @@ func (frappe) Red() Color {
 	}
 }
 
+// Maroon
 func (frappe) Maroon() Color {
 	return Color{
 		Hex: "#ea999c",
@@ -56,14 +63,16 @@ func (frappe) Maroon() Color {
 	}
 }
 
+// Peach
 func (frappe) Peach() Color {
 	return Color{
 		Hex: "#ef9f76",
 		RGB: [3]uint32{239, 159, 118},
-		HSL: [3]float32{20, 0.79, 0.70},
+		HSL: [3]float32{20, 0.79, 0.7},
 	}
 }
 
+// Yellow
 func (frappe) Yellow() Color {
 	return Color{
 		Hex: "#e5c890",
@@ -72,6 +81,7 @@ func (frappe) Yellow() Color {
 	}
 }
 
+// Green
 func (frappe) Green() Color {
 	return Color{
 		Hex: "#a6d189",
@@ -80,6 +90,7 @@ func (frappe) Green() Color {
 	}
 }
 
+// Teal
 func (frappe) Teal() Color {
 	return Color{
 		Hex: "#81c8be",
@@ -88,6 +99,7 @@ func (frappe) Teal() Color {
 	}
 }
 
+// Sky
 func (frappe) Sky() Color {
 	return Color{
 		Hex: "#99d1db",
@@ -96,6 +108,7 @@ func (frappe) Sky() Color {
 	}
 }
 
+// Sapphire
 func (frappe) Sapphire() Color {
 	return Color{
 		Hex: "#85c1dc",
@@ -104,6 +117,7 @@ func (frappe) Sapphire() Color {
 	}
 }
 
+// Blue
 func (frappe) Blue() Color {
 	return Color{
 		Hex: "#8caaee",
@@ -112,6 +126,7 @@ func (frappe) Blue() Color {
 	}
 }
 
+// Lavender
 func (frappe) Lavender() Color {
 	return Color{
 		Hex: "#babbf1",
@@ -120,22 +135,25 @@ func (frappe) Lavender() Color {
 	}
 }
 
+// Text
 func (frappe) Text() Color {
 	return Color{
 		Hex: "#c6d0f5",
 		RGB: [3]uint32{198, 208, 245},
-		HSL: [3]float32{227, 0.70, 0.87},
+		HSL: [3]float32{227, 0.7, 0.87},
 	}
 }
 
+// Subtext 1
 func (frappe) Subtext1() Color {
 	return Color{
 		Hex: "#b5bfe2",
 		RGB: [3]uint32{181, 191, 226},
-		HSL: [3]float32{227, 0.44, 0.80},
+		HSL: [3]float32{227, 0.44, 0.8},
 	}
 }
 
+// Subtext 0
 func (frappe) Subtext0() Color {
 	return Color{
 		Hex: "#a5adce",
@@ -144,6 +162,7 @@ func (frappe) Subtext0() Color {
 	}
 }
 
+// Overlay 2
 func (frappe) Overlay2() Color {
 	return Color{
 		Hex: "#949cbb",
@@ -152,6 +171,7 @@ func (frappe) Overlay2() Color {
 	}
 }
 
+// Overlay 1
 func (frappe) Overlay1() Color {
 	return Color{
 		Hex: "#838ba7",
@@ -160,6 +180,7 @@ func (frappe) Overlay1() Color {
 	}
 }
 
+// Overlay 0
 func (frappe) Overlay0() Color {
 	return Color{
 		Hex: "#737994",
@@ -168,6 +189,7 @@ func (frappe) Overlay0() Color {
 	}
 }
 
+// Surface 2
 func (frappe) Surface2() Color {
 	return Color{
 		Hex: "#626880",
@@ -176,6 +198,7 @@ func (frappe) Surface2() Color {
 	}
 }
 
+// Surface 1
 func (frappe) Surface1() Color {
 	return Color{
 		Hex: "#51576d",
@@ -184,14 +207,16 @@ func (frappe) Surface1() Color {
 	}
 }
 
+// Surface 0
 func (frappe) Surface0() Color {
 	return Color{
 		Hex: "#414559",
 		RGB: [3]uint32{65, 69, 89},
-		HSL: [3]float32{230, 0.16, 0.30},
+		HSL: [3]float32{230, 0.16, 0.3},
 	}
 }
 
+// Base
 func (frappe) Base() Color {
 	return Color{
 		Hex: "#303446",
@@ -200,18 +225,20 @@ func (frappe) Base() Color {
 	}
 }
 
+// Mantle
 func (frappe) Mantle() Color {
 	return Color{
 		Hex: "#292c3c",
 		RGB: [3]uint32{41, 44, 60},
-		HSL: [3]float32{231, 0.19, 0.20},
+		HSL: [3]float32{231, 0.19, 0.2},
 	}
 }
 
+// Crust
 func (frappe) Crust() Color {
 	return Color{
 		Hex: "#232634",
 		RGB: [3]uint32{35, 38, 52},
-		HSL: [3]float32{229, 0.20, 0.17},
+		HSL: [3]float32{229, 0.2, 0.17},
 	}
 }

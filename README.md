@@ -24,6 +24,15 @@
 -	Q: **_"Where can I find the doc?"_**\
 	A: https://pkg.go.dev/github.com/catppuccin/go
 
+## How to generate
+
+This repository uses [whiskers](https://github.com/catppuccin/toolbox/tree/main/whiskers) for generation.
+
+Get `whiskers` (and `go`) in your PATH and run:
+```sh
+go generate ./...
+```
+
 ## 💝 Thanks to
 
 - [Carlos Becker](https://github.com/caarlos0)
