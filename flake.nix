@@ -25,7 +25,7 @@
             gopls
             whiskers
             (writeScriptBin "update" ''
-              ${whiskers}/bin/whiskers go.tera
+              whiskers go.tera
               go fmt
             '')
           ];
