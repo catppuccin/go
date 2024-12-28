@@ -53,7 +53,7 @@ type Color struct {
 
 // RGBA implements color.Color
 func (c Color) RGBA() (r uint32, g uint32, b uint32, a uint32) {
-	return c.RGB[0], c.RGB[1], c.RGB[2], 1
+	return c.RGB[0], c.RGB[1], c.RGB[2], 255
 }
 
 var _ color.Color = Color{}

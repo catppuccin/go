@@ -29,8 +29,8 @@ func TestVariant(t *testing.T) {
 
 func TestColor(t *testing.T) {
 	r, g, b, a := Mocha.Base().RGBA()
-	if 30 != r || 30 != g || b != 46 || a != 1 {
-		t.Fatalf("expected rgba=%d %d %d %d, got %d %d %d %d", 30, 30, 46, 1, r, g, b, a)
+	if 30 != r || 30 != g || b != 46 || a != 255 {
+		t.Fatalf("expected rgba=%d %d %d %d, got %d %d %d %d", 30, 30, 46, 255, r, g, b, a)
 	}
 }
 
