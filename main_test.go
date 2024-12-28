@@ -1,6 +1,9 @@
 package catppuccingo
 
-import "testing"
+import (
+	"image/color"
+	"testing"
+)
 
 func TestVariant(t *testing.T) {
 	for s, ss := range map[string]string{
@@ -28,9 +31,33 @@ func TestVariant(t *testing.T) {
 }
 
 func TestColor(t *testing.T) {
-	r, g, b, a := Mocha.Base().RGBA()
-	if 30 != r || 30 != g || b != 46 || a != 255 {
-		t.Fatalf("expected rgba=%d %d %d %d, got %d %d %d %d", 30, 30, 46, 255, r, g, b, a)
+	c := Mocha.Base()
+	r := c.RGB[0]
+	g := c.RGB[1]
+	b := c.RGB[2]
+	if 30 != r || 30 != g || b != 46 {
+		t.Fatalf("expected rgba=%d %d %d, got %d %d %d", 30, 30, 46, r, g, b)
+	}
+}
+
+func TestStdColor(t *testing.T) {
+	ourColor := Mocha.Base()
+	var otherColor color.RGBA
+	{
+		otherColor.R = ourColor.RGB[0]
+		otherColor.G = ourColor.RGB[1]
+		otherColor.B = ourColor.RGB[2]
+		otherColor.A = 0xff
+	}
+
+	r, g, b, a := ourColor.RGBA()
+	otherR, otherG, otherB, otherA := otherColor.RGBA()
+
+	if r != otherR || g != otherG || b != otherB || a != otherA {
+		t.Fatalf(
+			"image.color.RGBA gave %d %d %d %d, but we got %d %d %d %d",
+			otherR, otherG, otherB, otherA, r, g, b, a,
+		)
 	}
 }
 
