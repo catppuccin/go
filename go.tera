@@ -21,7 +21,7 @@ func ({{flavor.identifier}}) Name() string { return "{{flavor.identifier}}" }
 func ({{flavor.identifier}}) {{color.identifier | title}}() Color {
 	return Color{
 		Hex: "#{{color.hex}}",
-		RGB: [3]uint32{ {{color.rgb.r}}, {{color.rgb.g}}, {{color.rgb.b}}},
+		RGB: [3]uint8{ {{color.rgb.r}}, {{color.rgb.g}}, {{color.rgb.b}}},
 		HSL: [3]float32{ {{color.hsl.h | round(precision=2)}}, {{color.hsl.s | round(precision=2)}}, {{color.hsl.l | round(precision=2)}}},
 	}
 }
