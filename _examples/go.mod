@@ -3,7 +3,7 @@ module examples
 go 1.19
 
 require (
-	github.com/catppuccin/go v0.2.0
+	github.com/catppuccin/go v0.3.0
 	github.com/charmbracelet/lipgloss v1.0.0
 )
 
