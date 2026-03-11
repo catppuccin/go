@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/catppuccin/go v0.3.0
-	github.com/charmbracelet/lipgloss v1.1.0
+	github.com/charmbracelet/lipgloss/v2 v2.0.2
 )
 
 require (
